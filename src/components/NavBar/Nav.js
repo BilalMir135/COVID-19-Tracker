@@ -26,7 +26,7 @@ const Nav = () => {
   return (
     <AppBar position='static' className='appBar'>
       <Toolbar>
-        <img src={coronaVirus} width='50px' height='50px' />
+        <img src={coronaVirus} width='50px' height='50px' alt='corona' />
         <Typography variant='h6' className={classes.title}>
           COVID-19 Tracker
         </Typography>
