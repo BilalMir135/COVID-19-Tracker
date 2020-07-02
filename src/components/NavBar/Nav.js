@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import coronaVirus from '../../assets/coronavirus.png';
@@ -16,12 +16,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 const Nav = () => {
-  const [isDesktop, setIsDesktop] = useState(true);
   const classes = useStyles();
-
-  useEffect(() => {
-    window.screen.width < 700 && setIsDesktop(false);
-  }, []);
 
   return (
     <AppBar position='static' className='appBar'>
@@ -30,7 +25,7 @@ const Nav = () => {
         <Typography variant='h6' className={classes.title}>
           COVID-19 Tracker
         </Typography>
-        {isDesktop ? <NavButtons /> : <Menu />}
+        {window.screen.width >= 700 ? <NavButtons /> : <Menu />}
       </Toolbar>
     </AppBar>
   );
