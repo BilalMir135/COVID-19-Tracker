@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import Nav from './components/NavBar/Nav';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Global from './components/Global';
+import Global from './components/Global/Global';
 import Country from './components/Country';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Router>
         <Nav />
         <Switch>

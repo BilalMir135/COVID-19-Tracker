@@ -1,0 +1,90 @@
+.root {
+  height: 200px !important;
+  margin: 0 1% !important;
+  max-width: 350px !important;
+  padding: 10px !important;
+}
+
+.cardText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cardImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation-name: spin;
+  animation-duration: 8000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.cardImage img {
+  width: 100px;
+  height: 100px;
+}
+
+.infected {
+  border-right: 10px solid #396baf;
+  border-left: 10px solid #396baf;
+}
+
+.recovered {
+  border-right: 10px solid #a2ce33;
+  border-left: 10px solid #a2ce33;
+}
+
+.death {
+  border-right: 10px solid #ed3b43;
+  border-left: 10px solid #ed3b43;
+}
+
+.infectedNum {
+  color: #396baf;
+  font-weight: 600 !important;
+}
+
+.recoveredNum {
+  color: #a2ce33;
+  font-weight: 600 !important;
+}
+
+.deathNum {
+  color: #ed3b43;
+  font-weight: 600 !important;
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1030px) {
+  .root {
+    margin: 2% !important;
+    height: 150px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .root {
+    margin: 2% 0 !important;
+    height: 150px;
+    width: 100%;
+  }
+  .cardImage img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
