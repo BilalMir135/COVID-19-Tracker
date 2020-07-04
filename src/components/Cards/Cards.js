@@ -1,8 +1,8 @@
 import React from 'react';
 import { Grid, Card, Typography } from '@material-ui/core';
-import InfectedImage from '../assets/infected.png';
-import RecoveredImage from '../assets/recovered.png';
-import DeathImage from '../assets/death.png';
+import InfectedImage from '../../assets/infected.png';
+import RecoveredImage from '../../assets/recovered.png';
+import DeathImage from '../../assets/death.png';
 import styles from './Card.module.css';
 import CountUp from 'react-countup';
 import cx from 'classnames';

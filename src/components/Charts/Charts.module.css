@@ -1,0 +1,27 @@
+.barChart {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #a31545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doughnutChart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border: 2px solid #a31545;
+}
+
+@media (max-width: 770px) {
+  .doughnutChart {
+    height: 200px;
+    margin-top: 5%;
+  }
+  .barChart {
+    margin: 0 2%;
+    height: 200px;
+  }
+}

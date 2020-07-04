@@ -12,3 +12,14 @@ export const fecthGlobalData = async () => {
     console.log(error);
   }
 };
+
+export const fetchHistory = async () => {
+  try {
+    const {
+      data: [data],
+    } = await axios.get('https://kustom.radio-canada.ca/coronavirus/world');
+    return data.History.reverse();
+  } catch (error) {
+    console.log(error);
+  }
+};

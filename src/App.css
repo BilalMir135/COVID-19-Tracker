@@ -3,7 +3,6 @@
 }
 
 .App {
-  height: 100vh;
   background-image: url(./assets/backgound.png);
   background-color: #e4e4e4;
   background-position: center;
@@ -36,12 +35,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #482880 !important;
   height: 80vh;
 }
 
-@media (max-width: 770px) {
-  .App {
-    height: auto;
-  }
+.footer {
+  background-color: #a31545;
+  margin-top: 40px;
+  color: #fff;
+  padding-top: 40px;
+}
+
+.covidText {
+  margin-bottom: 30px !important;
+}
+
+.covidImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
