@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './components/NavBar/Nav';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Global from './components/Global/Global';
-import Country from './components/Country';
+import Country from './components/Country/Country';
 import Footer from './components/Footer';
 
 function App() {
