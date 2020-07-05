@@ -1,3 +1,15 @@
+# COVID-19 Tracker
+Covid-19 Tracker is a web app build with React-JS and Material-UI for tracking current situation of Covid-19.<br/>
+**Deployed on Surge :** [Covid-19 Tracker](https://covid19-tracker-app-bm.surge.sh/).
+
+# Data Resources
+<ul>
+  <li href="https://api.covid19api.com/summary" target="_blank">https://api.covid19api.com/summary</li>
+  <li href="https://kustom.radio-canada.ca/coronavirus/world" target="_blank">https://kustom.radio-canada.ca/coronavirus/world</li>
+  <li href="https://covid19.mathdro.id/api/countries" target="_blank">https://covid19.mathdro.id/api/countries</li>
+  <li href="https://restcountries.eu/rest/v2/name/Pakistan?fullText=true" target="_blank">https://restcountries.eu/rest/v2/name/Pakistan?fullText=true</li>
+</ul>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
